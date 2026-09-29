@@ -11,19 +11,28 @@ import Demo3 from './demos/taro/demo3'
 const NavBarDemo = () => {
   const [translated] = useTranslate({
     'zh-CN': {
-      basic: '基础用法',
-      title1: '标题位置',
-      title2: '多tab切换导航',
+      group1: 'iOS26以下/安卓鸿蒙',
+      group2: 'iOS26以上',
+      cat1: '标题型',
+      cat2: '搜索型',
+      cat3: '导航型',
+      empty: '暂无示例，敬请期待',
     },
     'zh-TW': {
-      basic: '基礎用法',
-      title1: '標題位置',
-      title2: '多tab切換導航',
+      group1: 'iOS26以下/安卓鴻蒙',
+      group2: 'iOS26以上',
+      cat1: '標題型',
+      cat2: '搜尋型',
+      cat3: '導航型',
+      empty: '暫無示例，敬請期待',
     },
     'en-US': {
-      basic: 'Basic Usage',
-      title1: 'Title Align',
-      title2: 'Multi-tab Switching Navigation',
+      group1: 'iOS 26 and below / Android & HarmonyOS',
+      group2: 'iOS 26 and above',
+      cat1: 'Title',
+      cat2: 'Search',
+      cat3: 'Navigation',
+      empty: 'Coming soon',
     },
   })
   return (
@@ -32,12 +41,16 @@ const NavBarDemo = () => {
       <ScrollView
         className={`demo navbar-demo ${Taro.getEnv() === 'WEB' ? 'web' : ''}`}
       >
-        <View className="h2">{translated.basic}</View>
+        <View className="h2">{translated.group1}</View>
+        <View className="h3">{translated.cat1}</View>
         <Demo1 />
-        <View className="h2">{translated.title1}</View>
         <Demo2 />
-        <View className="h2">{translated.title2}</View>
+        <View className="h3">{translated.cat2}</View>
+        <View className="navbar-demo-empty">{translated.empty}</View>
+        <View className="h3">{translated.cat3}</View>
         <Demo3 />
+        <View className="h2">{translated.group2}</View>
+        <View className="navbar-demo-empty">{translated.empty}</View>
       </ScrollView>
     </>
   )

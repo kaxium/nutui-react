@@ -2698,8 +2698,20 @@ $table-sticky-right-shadow: var(
 // navbar（✅）
 $navbar-width: var(--nutui-navbar-width, 100%) !default;
 $navbar-height: var(--nutui-navbar-height, scale-px(44px)) !default;
-$navbar-margin-bottom: var(--nutui-navbar-margin-bottom, scale-px(20px)) !default;
-$navbar-background: var(--nutui-navbar-background, $white) !default;
+$navbar-padding: var(
+  --nutui-navbar-padding,
+  scale-px(4px) scale-px(8px)
+) !default;
+$navbar-subbar-padding: var(
+  --nutui-navbar-subbar-padding,
+  scale-px(8px) 0
+) !default;
+$navbar-side-maxwidth: var(
+  --nutui-navbar-side-maxwidth,
+  scale-px(108px)
+) !default;
+$navbar-side-padding: var(--nutui-navbar-side-padding, scale-px(8px)) !default;
+$navbar-background: var(--nutui-navbar-background, transparent) !default;
 $navbar-box-shadow: var(--nutui-navbar-box-shadow, none) !default;
 $navbar-color: var(--nutui-navbar-color, $color-title) !default;
 $navbar-font-size: var(--nutui-navbar-font-size, $font-size-base) !default;

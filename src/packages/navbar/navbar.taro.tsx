@@ -11,6 +11,7 @@ const defaultProps = {
   left: '',
   right: '',
   back: '',
+  subBar: '',
   fixed: false,
   safeAreaInsetTop: false,
   placeholder: false,
@@ -21,6 +22,7 @@ export const NavBar: FunctionComponent<Partial<TaroNavBarProps>> = (props) => {
     right,
     left,
     title,
+    subBar,
     className,
     style,
     back,
@@ -82,6 +84,7 @@ export const NavBar: FunctionComponent<Partial<TaroNavBarProps>> = (props) => {
         className={classNames({
           [`${classPrefix}-title`]: true,
           [`${classPrefix}-title-center`]: title,
+          [`${classPrefix}-title-padding-left`]: !left && !back && !title,
         })}
       >
         {title || children}
@@ -103,12 +106,19 @@ export const NavBar: FunctionComponent<Partial<TaroNavBarProps>> = (props) => {
     )
   }
 
+  const renderSubBar = () => {
+    return subBar ? (
+      <View className={`${classPrefix}-subbar`}>{subBar}</View>
+    ) : null
+  }
+
   const renderWrapper = () => {
     return (
       <View className={cls} style={styles()}>
         {renderLeft()}
         {renderContent()}
         {renderRight()}
+        {renderSubBar()}
       </View>
     )
   }
@@ -121,6 +131,7 @@ export const NavBar: FunctionComponent<Partial<TaroNavBarProps>> = (props) => {
 
   const cls = classNames(classPrefix, classes, className, {
     [`${classPrefix}-title-wrapper`]: title,
+    [`${classPrefix}-has-subbar`]: subBar,
   })
 
   return (

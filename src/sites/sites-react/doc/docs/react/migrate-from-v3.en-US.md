@@ -149,3 +149,14 @@ npm install @nutui/nutui-react-taro
   - Pop up from the top via `position="top"`; the content is displayed as a grid. `options` support an `icon` field (a string is rendered with `img`, or a custom node can be passed), and `columns` sets the number of columns (only `4` / `5`, default `5`). `cancelText` is rendered as a "collapse" button in top mode. The grid layout can also be used for bottom popups via `layout="grid"`.
 - **Header styling and close capabilities (new)**:
   - Added `titleAlign` (`left` / `center`, default `center`; `description` only takes effect when `center`), `headerLeft`, and `headerRight` for customizing the left and right content of the header, as well as `closeable` / `closeIconPosition` to control the display and position of the close button. All of the above are purely additive and do not affect existing usage.
+
+### NavBar (Navigation)
+
+- **Removed CSS variable `--nutui-navbar-margin-bottom` (breaking change)**:
+  - The variable was only ever declared and never consumed by the component, so the navbar had no effective margin. After this cleanup, any declaration of it in your theme will silently stop working — just remove it, no replacement is needed.
+- **Default background changed from white to transparent (visual change)**:
+  - The default value of `--nutui-navbar-background` changed from `$white` to `transparent`. If your page relies on the navbar's built-in white background, set `--nutui-navbar-background` explicitly, or add a background to the wrapping container.
+- **Padding and side content width are now variables (new)**:
+  - Added `--nutui-navbar-padding` (default `4px 8px`), `--nutui-navbar-side-maxwidth` (default `108px`) and `--nutui-navbar-side-padding` (default `8px`). The horizontal padding is tightened from `16px` to `8px`, and the maximum width of the left/right content area changes from `124px` to `116px`.
+- **Title font size unified to 18px across brands (visual change)**:
+  - `--nutui-navbar-title-font-size` is unified to `18px` (`$font-size-xl`) from `20px` in the JMAPP theme and `16px` in the JRKF theme.

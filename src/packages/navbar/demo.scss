@@ -5,7 +5,112 @@
   }
 }
 .navbar-demo {
+  padding: 57px 0 0 0 !important;
+
   .nut-tabpane {
     display: none;
+  }
+
+  h3,
+  .h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0 10px;
+    font-size: 13px;
+    font-weight: normal;
+    color: var(--nutui-color-title, rgba(144, 156, 164, 1));
+  }
+
+  .navbar-demo-empty {
+    margin-top: 10px;
+    padding: 0 10px;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+  }
+
+  .navbar-android-button {
+    display: flex;
+    align-items: center;
+    padding: 0 scale-px(8px);
+    gap: scale-px(16px);
+    background: $color-background-overlay;
+    border-radius: $radius-base;
+    backdrop-filter: blur(40px);
+    -webkit-backdrop-filter: blur(40px);
+    height: scale-px(36px);
+  }
+
+  .navbar-title-twoline {
+    display: flex;
+    flex-direction: column;
+
+    span:nth-of-type(1) {
+      line-height: scale-px(26px);
+    }
+
+    span:nth-of-type(2) {
+      line-height: scale-px(16px);
+      font-size: scale-font-px(11px);
+      font-weight: $font-weight;
+      color: $color-text-help;
+    }
+  }
+
+  .nut-navbar.nut-navbar-sticky {
+    --nutui-navbar-background: #{var(--nutui-gray-1, $white)};
+    --nutui-navbar-box-shadow: 0 1px 0 0 #{$color-border};
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    .navbar-android-button {
+      background: none;
+    }
+  }
+
+  .navbar-subbar {
+    display: flex;
+    padding: 0 8px;
+    justify-content: space-between;
+
+    &-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      & > div:nth-of-type(1) {
+        width: scale-px(44px);
+        height: scale-px(44px);
+        border-radius: $radius-xxxl;
+        background: var(--nutui-color-background-component, #f0f2f7);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & > img {
+          width: scale-px(24px);
+          height: scale-px(24px);
+        }
+      }
+
+      &-active > div:nth-of-type(1) {
+        background: linear-gradient(
+          179deg,
+          rgba(255, 111, 79, 0.9) 0%,
+          rgba(255, 55, 11, 0.9) 100%
+        );
+      }
+
+      & > span:nth-of-type(1) {
+        margin-top: 2px;
+        line-height: scale-px(22px);
+        font-size: $font-size-base;
+        color: $color-text;
+      }
+    }
+  }
+}
+
+.nut-theme-dark {
+  .navbar-demo {
   }
 }

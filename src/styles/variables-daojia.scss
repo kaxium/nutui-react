@@ -1681,8 +1681,14 @@ $table-sticky-right-shadow: var(--nutui-table-sticky-right-shadow,
 // navbar（✅）
 $navbar-width: var(--nutui-navbar-width, 100%) !default;
 $navbar-height: var(--nutui-navbar-height, 44px) !default;
-$navbar-margin-bottom: var(--nutui-navbar-margin-bottom, 20px) !default;
-$navbar-background: var(--nutui-navbar-background, $white) !default;
+$navbar-padding: var(--nutui-navbar-padding, 4px 8px) !default;
+$navbar-subbar-padding: var(
+  --nutui-navbar-subbar-padding,
+  8px 0
+) !default;
+$navbar-side-maxwidth: var(--nutui-navbar-side-maxwidth, 108px) !default;
+$navbar-side-padding: var(--nutui-navbar-side-padding, 8px) !default;
+$navbar-background: var(--nutui-navbar-background, transparent) !default;
 $navbar-box-shadow: var(--nutui-navbar-box-shadow, 0 0 transparent) !default;
 $navbar-color: var(--nutui-navbar-color, $color-title) !default;
 $navbar-font-size: var(--nutui-navbar-font-size, $font-size-base) !default;
