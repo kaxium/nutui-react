@@ -40,7 +40,27 @@ import { NavBar } from '@nutui/nutui-react'
 
 ### iOS26以上
 
+> 以下示例中的按鈕液態玻璃效果僅在 H5 端實現，僅用於效果演示；小程序及原生 App 端需業務自行適配開發。京東內部開發者可在NutUI交流群中諮詢，有內部現成液態玻璃效果組件可復用。
+
+#### 標題型
+
+:::demo
+
+<CodeBlock src='h5/demo4.tsx'></CodeBlock>
+
+:::
+
+#### 搜尋型
+
 暫無示例，敬請期待
+
+#### 導航型
+
+:::demo
+
+<CodeBlock src='h5/demo6.tsx'></CodeBlock>
+
+:::
 
 ## Navbar
 

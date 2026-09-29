@@ -1,6 +1,8 @@
 import React from 'react'
 import { NavBar, Toast, Space } from '@nutui/nutui-react'
 import { ArrowLeft, Close, More, Share } from '@nutui/icons-react'
+import { JDMaterialView } from '../../jdmaterialview/jdmaterialview'
+import { useAppTheme } from '@/sites/mobile/theme-context'
 
 const subBarData = [
   {
@@ -26,7 +28,8 @@ const subBarData = [
   },
 ]
 
-const Demo1 = () => {
+const Demo4 = () => {
+  const { darkMode } = useAppTheme()
   return (
     <Space direction="vertical">
       <NavBar
@@ -37,31 +40,48 @@ const Demo1 = () => {
           </div>
         }
         left={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <ArrowLeft />
             <Close />
-          </div>
+          </JDMaterialView>
         }
         right={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <Share onClick={(e) => Toast.show('icon')} />
-          </div>
+          </JDMaterialView>
         }
+        className="navbar-iOS26"
         zIndex={0}
       />
       <NavBar
         back={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <ArrowLeft />
-          </div>
+          </JDMaterialView>
         }
         right={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <Share onClick={(e) => Toast.show('icon')} />
-          </div>
+          </JDMaterialView>
         }
         onBackClick={(e) => Toast.show('返回')}
-        className="nut-navbar-sticky"
+        className="navbar-iOS26 nut-navbar-sticky"
         zIndex={0}
       >
         <div className="navbar-title-twoline">
@@ -71,13 +91,17 @@ const Demo1 = () => {
       </NavBar>
       <NavBar
         right={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <span>清除未读</span>
             <More onClick={(e) => Toast.show('icon')} />
-          </div>
+          </JDMaterialView>
         }
         onBackClick={(e) => Toast.show('返回')}
-        className="nut-navbar-sticky"
+        className="navbar-iOS26 nut-navbar-sticky"
         subBar={
           <div className="navbar-subbar">
             {subBarData.map((item) => (
@@ -100,4 +124,5 @@ const Demo1 = () => {
     </Space>
   )
 }
-export default Demo1
+
+export default Demo4

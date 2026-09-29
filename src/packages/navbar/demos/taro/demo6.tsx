@@ -3,24 +3,26 @@ import Taro from '@tarojs/taro'
 import { Text, View } from '@tarojs/components'
 import { NavBar, TabPane, Tabs, Space } from '@nutui/nutui-react-taro'
 import { ArrowLeft, More } from '@nutui/icons-react-taro'
+import JDMaterialView from '../../jdmaterialview/index.taro'
 
-const Demo3 = () => {
+const Demo6 = () => {
   const [tab1value, setTab1value] = useState<string | number>('0')
   return (
     <Space direction="vertical">
       <NavBar
         back={
-          <View className="navbar-android-button">
+          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
             <ArrowLeft />
-          </View>
+          </JDMaterialView>
         }
         right={
-          <View className="navbar-android-button">
+          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
             <Text onClick={() => Taro.showToast({ title: '编辑' })}>编辑</Text>
             <More onClick={() => Taro.showToast({ title: 'icon' })} />
-          </View>
+          </JDMaterialView>
         }
         onBackClick={() => Taro.showToast({ title: '返回' })}
+        className="navbar-iOS26"
         zIndex={0}
       >
         <View style={{ width: '100%' }}>
@@ -44,4 +46,4 @@ const Demo3 = () => {
     </Space>
   )
 }
-export default Demo3
+export default Demo6

@@ -1,24 +1,36 @@
 import React, { useState } from 'react'
 import { NavBar, TabPane, Tabs, Toast, Space } from '@nutui/nutui-react'
 import { ArrowLeft, More } from '@nutui/icons-react'
+import JDMaterialView from '../../jdmaterialview'
+import { useAppTheme } from '@/sites/mobile/theme-context'
 
-const Demo3 = () => {
+const Demo6 = () => {
   const [tab1value, setTab1value] = useState<string | number>('0')
+  const { darkMode } = useAppTheme()
   return (
     <Space direction="vertical">
       <NavBar
         back={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <ArrowLeft />
-          </div>
+          </JDMaterialView>
         }
         right={
-          <div className="navbar-android-button">
+          <JDMaterialView
+            className="navbar-iOS26-button"
+            scene="top-solid"
+            darkMode={darkMode}
+          >
             <span onClick={(e) => Toast.show('编辑')}>编辑</span>
             <More onClick={(e) => Toast.show('icon')} />
-          </div>
+          </JDMaterialView>
         }
         onBackClick={(e) => Toast.show('返回')}
+        className="navbar-iOS26"
         zIndex={0}
       >
         <div style={{ width: '100%' }}>
@@ -42,4 +54,4 @@ const Demo3 = () => {
     </Space>
   )
 }
-export default Demo3
+export default Demo6

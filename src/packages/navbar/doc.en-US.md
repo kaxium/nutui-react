@@ -40,7 +40,27 @@ Coming soon
 
 ### iOS 26 and above
 
+> Note: In the demos below, the liquid glass effect of the buttons is implemented on the H5 side only, for demonstration purposes. Mini programs and native apps need to be adapted by the business team. JD internal developers can consult the NutUI group for a ready-to-use internal liquid glass component.
+
+#### Title
+
+:::demo
+
+<CodeBlock src='h5/demo4.tsx'></CodeBlock>
+
+:::
+
+#### Search
+
 Coming soon
+
+#### Navigation
+
+:::demo
+
+<CodeBlock src='h5/demo6.tsx'></CodeBlock>
+
+:::
 
 ## Navbar
 

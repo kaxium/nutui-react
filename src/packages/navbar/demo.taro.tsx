@@ -5,8 +5,9 @@ import { useTranslate } from '@/sites/assets/locale/taro'
 import Header from '@/sites/components/header'
 import './demo.scss'
 import Demo1 from './demos/taro/demo1'
-import Demo2 from './demos/taro/demo2'
 import Demo3 from './demos/taro/demo3'
+import Demo4 from './demos/taro/demo4'
+import Demo6 from './demos/taro/demo6'
 
 const NavBarDemo = () => {
   const [translated] = useTranslate({
@@ -44,13 +45,17 @@ const NavBarDemo = () => {
         <View className="h2">{translated.group1}</View>
         <View className="h3">{translated.cat1}</View>
         <Demo1 />
-        <Demo2 />
         <View className="h3">{translated.cat2}</View>
         <View className="navbar-demo-empty">{translated.empty}</View>
         <View className="h3">{translated.cat3}</View>
         <Demo3 />
         <View className="h2">{translated.group2}</View>
+        <View className="h3">{translated.cat1}</View>
+        <Demo4 />
+        <View className="h3">{translated.cat2}</View>
         <View className="navbar-demo-empty">{translated.empty}</View>
+        <View className="h3">{translated.cat3}</View>
+        <Demo6 />
       </ScrollView>
     </>
   )
