@@ -26,10 +26,6 @@ import { NavBar } from '@nutui/nutui-react'
 
 :::
 
-#### Search
-
-Coming soon
-
 #### Navigation
 
 :::demo
@@ -49,10 +45,6 @@ Coming soon
 <CodeBlock src='h5/demo4.tsx'></CodeBlock>
 
 :::
-
-#### Search
-
-Coming soon
 
 #### Navigation
 

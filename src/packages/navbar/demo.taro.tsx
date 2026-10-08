@@ -15,25 +15,19 @@ const NavBarDemo = () => {
       group1: 'iOS26以下/安卓鸿蒙',
       group2: 'iOS26以上',
       cat1: '标题型',
-      cat2: '搜索型',
       cat3: '导航型',
-      empty: '暂无示例，敬请期待',
     },
     'zh-TW': {
       group1: 'iOS26以下/安卓鴻蒙',
       group2: 'iOS26以上',
       cat1: '標題型',
-      cat2: '搜尋型',
       cat3: '導航型',
-      empty: '暫無示例，敬請期待',
     },
     'en-US': {
       group1: 'iOS 26 and below / Android & HarmonyOS',
       group2: 'iOS 26 and above',
       cat1: 'Title',
-      cat2: 'Search',
       cat3: 'Navigation',
-      empty: 'Coming soon',
     },
   })
   return (
@@ -45,15 +39,11 @@ const NavBarDemo = () => {
         <View className="h2">{translated.group1}</View>
         <View className="h3">{translated.cat1}</View>
         <Demo1 />
-        <View className="h3">{translated.cat2}</View>
-        <View className="navbar-demo-empty">{translated.empty}</View>
         <View className="h3">{translated.cat3}</View>
         <Demo3 />
         <View className="h2">{translated.group2}</View>
         <View className="h3">{translated.cat1}</View>
         <Demo4 />
-        <View className="h3">{translated.cat2}</View>
-        <View className="navbar-demo-empty">{translated.empty}</View>
         <View className="h3">{translated.cat3}</View>
         <Demo6 />
       </ScrollView>

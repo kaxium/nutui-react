@@ -26,10 +26,6 @@ import { NavBar } from '@nutui/nutui-react'
 
 :::
 
-#### 搜索型
-
-暂无示例，敬请期待
-
 #### 导航型
 
 :::demo
@@ -49,10 +45,6 @@ import { NavBar } from '@nutui/nutui-react'
 <CodeBlock src='h5/demo4.tsx'></CodeBlock>
 
 :::
-
-#### 搜索型
-
-暂无示例，敬请期待
 
 #### 导航型
 
