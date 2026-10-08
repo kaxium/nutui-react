@@ -99,8 +99,8 @@
     /* #ifndef harmony jd h5 weapp*/
     .nut-icon,
     .nutui-iconfont {
-      width: 20px;
-      height: 20px;
+      width: scale-px(20px);
+      height: scale-px(20px);
       font-size: $font-size-2xl;
     }
 
@@ -125,7 +125,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: center;
-      gap: 16px;
+      gap: scale-px(16px);
     }
 
     &-hidden {
@@ -137,7 +137,7 @@
   &-right {
     padding-left: $navbar-side-padding;
     justify-content: flex-end;
-    gap: 16px;
+    gap: scale-px(16px);
 
     &-rtl {
       padding-right: $navbar-side-padding;
