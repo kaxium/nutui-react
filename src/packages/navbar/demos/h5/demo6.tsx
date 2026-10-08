@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import { NavBar, TabPane, Tabs, Toast, Space } from '@nutui/nutui-react'
 import { ArrowLeft, More } from '@nutui/icons-react'
-import JDMaterialView from '../../jdmaterialview'
+import { MaterialView } from '../../../materialview/materialview'
 import { useAppTheme } from '@/sites/mobile/theme-context'
 
 const Demo6 = () => {
@@ -11,23 +11,23 @@ const Demo6 = () => {
     <Space direction="vertical">
       <NavBar
         back={
-          <JDMaterialView
+          <MaterialView
             className="navbar-iOS26-button"
             scene="top-solid"
             darkMode={darkMode}
           >
             <ArrowLeft />
-          </JDMaterialView>
+          </MaterialView>
         }
         right={
-          <JDMaterialView
+          <MaterialView
             className="navbar-iOS26-button"
             scene="top-solid"
             darkMode={darkMode}
           >
             <span onClick={(e) => Toast.show('编辑')}>编辑</span>
             <More onClick={(e) => Toast.show('icon')} />
-          </JDMaterialView>
+          </MaterialView>
         }
         onBackClick={(e) => Toast.show('返回')}
         className="navbar-iOS26"

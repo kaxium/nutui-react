@@ -3,7 +3,7 @@ import Taro from '@tarojs/taro'
 import { Image, Text, View } from '@tarojs/components'
 import { NavBar, Space } from '@nutui/nutui-react-taro'
 import { ArrowLeft, Close, More, Share } from '@nutui/icons-react-taro'
-import { JDMaterialView } from '../../jdmaterialview/jdmaterialview.taro'
+import { MaterialView } from '../../../materialview/materialview.taro'
 
 const subBarData = [
   {
@@ -40,29 +40,29 @@ const Demo4 = () => {
           </View>
         }
         left={
-          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
+          <MaterialView className="navbar-iOS26-button" scene="top-solid">
             <ArrowLeft />
             <Close />
-          </JDMaterialView>
+          </MaterialView>
         }
         right={
-          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
+          <MaterialView className="navbar-iOS26-button" scene="top-solid">
             <Share onClick={() => Taro.showToast({ title: 'icon' })} />
-          </JDMaterialView>
+          </MaterialView>
         }
         className="navbar-iOS26"
         zIndex={0}
       />
       <NavBar
         back={
-          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
+          <MaterialView className="navbar-iOS26-button" scene="top-solid">
             <ArrowLeft />
-          </JDMaterialView>
+          </MaterialView>
         }
         right={
-          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
+          <MaterialView className="navbar-iOS26-button" scene="top-solid">
             <Share onClick={() => Taro.showToast({ title: 'icon' })} />
-          </JDMaterialView>
+          </MaterialView>
         }
         onBackClick={() => Taro.showToast({ title: '返回' })}
         className="navbar-iOS26 nut-navbar-sticky"
@@ -75,10 +75,10 @@ const Demo4 = () => {
       </NavBar>
       <NavBar
         right={
-          <JDMaterialView className="navbar-iOS26-button" scene="top-solid">
+          <MaterialView className="navbar-iOS26-button" scene="top-solid">
             <Text>清除未读</Text>
             <More onClick={() => Taro.showToast({ title: 'icon' })} />
-          </JDMaterialView>
+          </MaterialView>
         }
         onBackClick={() => Taro.showToast({ title: '返回' })}
         className="navbar-iOS26 nut-navbar-sticky"

@@ -20,12 +20,6 @@ import { NavBar } from '@nutui/nutui-react'
 
 :::
 
-:::demo
-
-<CodeBlock src='h5/demo2.tsx'></CodeBlock>
-
-:::
-
 #### Navigation
 
 :::demo
@@ -35,8 +29,6 @@ import { NavBar } from '@nutui/nutui-react'
 :::
 
 ### iOS 26 and above
-
-> Note: In the demos below, the liquid glass effect of the buttons is implemented on the H5 side only, for demonstration purposes. Mini programs and native apps need to be adapted by the business team. JD internal developers can consult the NutUI group for a ready-to-use internal liquid glass component.
 
 #### Title
 

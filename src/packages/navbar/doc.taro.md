@@ -20,12 +20,6 @@ import { NavBar } from '@nutui/nutui-react-taro'
 
 :::
 
-:::demo
-
-<CodeBlock src='taro/demo2.tsx'></CodeBlock>
-
-:::
-
 #### 导航型
 
 :::demo
@@ -35,8 +29,6 @@ import { NavBar } from '@nutui/nutui-react-taro'
 :::
 
 ### iOS26以上
-
-> 以下示例中的按钮液态玻璃效果仅在 H5 端实现，仅用于效果演示；小程序及原生 App 端需业务自行适配开发。京东内部开发者可在NutUI交流群中咨询，有内部现成液态玻璃效果组件可复用。
 
 #### 标题型
 
