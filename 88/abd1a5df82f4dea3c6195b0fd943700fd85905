@@ -1,0 +1,51 @@
+packages/nutui-react-cli/skills/nutui-react-v3-to-v4/references/migration-changes.md
+  s_14df23247a5ee4::t_df012c25209c46 82-86
+src/packages/tabs/doc.md
+  s_14df23247a5ee4::t_ef212590729001 197-198
+packages/nutui-react-taro-cli/skills/nutui-react-taro-v3-to-v4/references/migration-changes.en.md
+  s_14df23247a5ee4::t_df012c25209c46 82-86
+src/sites/sites-react/doc/docs/taro/migrate-from-v3.md
+  s_14df23247a5ee4::t_df012c25209c46 222-228
+src/sites/sites-react/doc/docs/react/migrate-from-v3.en-US.md
+  s_14df23247a5ee4::t_df012c25209c46 222-228
+src/packages/tabs/tabs.tsx
+  s_14df23247a5ee4::t_1f1da8c351c175 69,88,101,105,112,117,135,174,188,215,250,264
+src/types/spec/tabs/base.ts
+  s_14df23247a5ee4::t_4f6225ce3a5946 3
+packages/nutui-react-taro-cli/skills/nutui-react-taro-v3-to-v4/references/migration-changes.md
+  s_14df23247a5ee4::t_df012c25209c46 82-86
+src/packages/tabs/doc.en-US.md
+  s_14df23247a5ee4::t_ef212590729001 197-198
+src/sites/sites-react/doc/docs/react/migrate-from-v3.md
+  s_14df23247a5ee4::t_df012c25209c46 222-228
+src/packages/tabs/doc.zh-TW.md
+  s_14df23247a5ee4::t_ef212590729001 195-196
+src/sites/sites-react/doc/docs/taro/migrate-from-v3.en-US.md
+  s_14df23247a5ee4::t_df012c25209c46 222-228
+src/packages/tabs/doc.taro.md
+  s_14df23247a5ee4::t_ef212590729001 195-196
+packages/nutui-react-cli/skills/nutui-react-v3-to-v4/references/migration-changes.en.md
+  s_14df23247a5ee4::t_df012c25209c46 82-86
+src/packages/tabs/__test__/tabs.spec.tsx
+  s_14df23247a5ee4::t_f6d2db3ec7058b 19,142,286
+  s_14df23247a5ee4::t_fcbdec5dfc09b3 34-46
+src/packages/tabs/tabs.taro.tsx
+  s_14df23247a5ee4::t_0c9751bfe861c1 110,157,179,186,188,199-214,216,234,239,263,331
+  s_14df23247a5ee4::t_6965539199ece6 281,317
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.7.6",
+  "base_commit_sha": "88abd1a5df82f4dea3c6195b0fd943700fd85905",
+  "prompts": {},
+  "sessions": {
+    "s_14df23247a5ee4": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "01a1f2a8-3d1c-7fa3-b93b-3e6f848cb6ed",
+        "model": "DeepSeek-V4.1-Flash-A-joybuilder"
+      },
+      "human_author": "Kasim <249813821@qq.com>"
+    }
+  }
+}
